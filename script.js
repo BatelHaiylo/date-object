@@ -62,14 +62,39 @@ function webEntry(){
     }
 }
 
-function printLocation(){
+// function printLocation(){
 
-    console.log(dateOb = new Date().getUTC())
+//     console.log(dateOb = new Date().getUTC())
+// }
+
+function printLocation(){
+    var strDate = Date()
+    // var index;
+
+    // for(i=0; i<strDate; i++;){
+    //     if(strDate[i] == ")"){
+    //         index = strDate[i]
+    //     }
+    // }
+
+    return strDate.substring(strDate.indexOf(")")+1)
+}
+function live(){
+var str = 'Tue May 24 2022 09:33:33 GMT+0300 (שעון ישראל (קיץ))'   
+var startIndex = str.indexOf(")")
+console.log(str.substring(startIndex,str.length));
 }
 
+
+function live(){
+    var str = 'Tue May 24 2022 09:33:33 GMT+0300 (שעון ישראל (קיץ))'   
+    
+    console.log(str.substring(40,str.length));
+}
 
 function getRandomDate(){
 
     console.log (Math.floor(Math.random()*12) + "/" + Math.floor(Math.random()*(31-1)+1) + "/" + Math.floor(Math.random()*(2022-1990)+1990));
 }
-getRandomDate()
+
+
