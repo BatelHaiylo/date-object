@@ -81,7 +81,7 @@ function printLocation(){
 }
 function live(){
 var str = 'Tue May 24 2022 09:33:33 GMT+0300 (שעון ישראל (קיץ))'   
-var startIndex = str.indexOf(")")
+var startIndex = str.indexOf(")")+1
 console.log(str.substring(startIndex,str.length));
 }
 
@@ -90,6 +90,11 @@ function live(){
     var str = 'Tue May 24 2022 09:33:33 GMT+0300 (שעון ישראל (קיץ))'   
     
     console.log(str.substring(40,str.length));
+}
+function live(){
+    var str = 'Tue May 24 2022 09:33:33 GMT+0300 (שעון ישראל (קיץ))'   
+    
+    console.log(str.substr(str.length-20));
 }
 
 function getRandomDate(){
